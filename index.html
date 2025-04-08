@@ -17,21 +17,22 @@
             text-align: center;
             margin: 0;
             padding: 10px 0;
+            color: blue;
         }
 
         h1 {
             font-size: 2.5rem;
-            color: blue; /* Maintains blue color */
         }
 
         h2 {
             font-size: 2rem;
-            color: blue; /* Maintains blue color */
         }
 
         ul {
-            list-style-type: disc; /* Ensures bullets appear */
-            padding-left: 40px; /* Adds spacing to bullets */
+            list-style-type: disc;
+            display: inline-block;
+            text-align: left;
+            padding-left: 20px;
         }
 
         li {
@@ -65,16 +66,29 @@
         .content {
             margin-left: 220px;
             padding: 20px;
+            text-align: center;
         }
 
-        a {
-            font-size: 1.5rem;
+        .footer-link {
+            font-size: 1rem;
             color: #007bff;
             text-decoration: none;
         }
 
-        a:hover {
+        .footer-link:hover {
             text-decoration: underline;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            background-color: #e9ecef;
+            padding: 15px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            font-size: 14px;
+            color: #555;
         }
 
         /* Responsive Design for Mobile */
@@ -99,20 +113,22 @@
 
             h1 {
                 font-size: 2rem;
-                color: blue; /* Ensures heading color stays blue */
             }
 
             h2 {
                 font-size: 1.5rem;
-                color: blue; /* Ensures heading color stays blue */
             }
 
             ul {
-                padding-left: 20px; /* Adjusts spacing for smaller screens */
+                padding-left: 0;
             }
 
             li {
                 font-size: 1rem;
+            }
+
+            footer {
+                font-size: 12px;
             }
         }
     </style>
@@ -138,7 +154,11 @@
             <li>Weekdays/Weekend Timings Available</li>
             <li>Valid Working with Children Check</li>
         </ul>
-        <a href="https://namocoaching.github.io/MathsTuition/contact">Contact Us</a>
     </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 NamoCoaching. All Rights Reserved. | <a class="footer-link" href="https://namocoaching.github.io/MathsTuition/contact">Contact Us</a>
+    </footer>
 </body>
 </html>
